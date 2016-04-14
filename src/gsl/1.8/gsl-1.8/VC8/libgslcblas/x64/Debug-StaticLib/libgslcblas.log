@@ -1,0 +1,386 @@
+﻿Build started 14/04/2016 11:05:25.
+     1>Project "C:\gsl\src\gsl\1.8\gsl-1.8\VC8\libgslcblas\libgslcblas.vcxproj" on node 2 (Rebuild target(s)).
+     1>PreBuildEvent:
+         if not exist .\..\..\config.h goto COPY_CONFIG_H
+         
+         fc .\..\config.h.msvc .\..\..\config.h
+         if NOT ERRORLEVEL 1 goto EXIT_BAT
+         
+         :COPY_CONFIG_H
+         if exist .\..\..\config.h del .\..\..\config.h
+         copy .\..\config.h.msvc .\..\..\config.h
+         goto EXIT_BAT
+         
+         :EXIT_BAT
+         
+         :VCEnd
+         Comparing files .\..\config.h.msvc and .\..\..\CONFIG.H
+         FC: no differences encountered
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I.\.. /I.\..\.. /Zi /nologo /W4 /WX- /Od /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug-StaticLib\\" /Fd"x64\Debug-StaticLib\vc110.pdb" /Gd /TC /errorReport:prompt ..\..\cblas\caxpy.c ..\..\cblas\ccopy.c ..\..\cblas\cdotc_sub.c ..\..\cblas\cdotu_sub.c ..\..\cblas\cgbmv.c ..\..\cblas\cgemm.c ..\..\cblas\cgemv.c ..\..\cblas\cgerc.c ..\..\cblas\cgeru.c ..\..\cblas\chbmv.c ..\..\cblas\chemm.c ..\..\cblas\chemv.c ..\..\cblas\cher.c ..\..\cblas\cher2.c ..\..\cblas\cher2k.c ..\..\cblas\cherk.c ..\..\cblas\chpmv.c ..\..\cblas\chpr.c ..\..\cblas\chpr2.c ..\..\cblas\cscal.c ..\..\cblas\csscal.c ..\..\cblas\cswap.c ..\..\cblas\csymm.c ..\..\cblas\csyr2k.c ..\..\cblas\csyrk.c ..\..\cblas\ctbmv.c ..\..\cblas\ctbsv.c ..\..\cblas\ctpmv.c ..\..\cblas\ctpsv.c ..\..\cblas\ctrmm.c ..\..\cblas\ctrmv.c ..\..\cblas\ctrsm.c ..\..\cblas\ctrsv.c ..\..\cblas\dasum.c ..\..\cblas\daxpy.c ..\..\cblas\dcopy.c ..\..\cblas\ddot.c ..\..\cblas\dgbmv.c ..\..\cblas\dgemm.c ..\..\cblas\dgemv.c ..\..\cblas\dger.c ..\..\cblas\dnrm2.c ..\..\cblas\drot.c ..\..\cblas\drotg.c ..\..\cblas\drotm.c ..\..\cblas\drotmg.c ..\..\cblas\dsbmv.c ..\..\cblas\dscal.c ..\..\cblas\dsdot.c ..\..\cblas\dspmv.c ..\..\cblas\dspr.c ..\..\cblas\dspr2.c ..\..\cblas\dswap.c ..\..\cblas\dsymm.c ..\..\cblas\dsymv.c ..\..\cblas\dsyr.c ..\..\cblas\dsyr2.c ..\..\cblas\dsyr2k.c ..\..\cblas\dsyrk.c ..\..\cblas\dtbmv.c ..\..\cblas\dtbsv.c ..\..\cblas\dtpmv.c ..\..\cblas\dtpsv.c ..\..\cblas\dtrmm.c ..\..\cblas\dtrmv.c ..\..\cblas\dtrsm.c ..\..\cblas\dtrsv.c ..\..\cblas\dzasum.c ..\..\cblas\dznrm2.c ..\..\cblas\icamax.c ..\..\cblas\idamax.c ..\..\cblas\isamax.c ..\..\cblas\izamax.c ..\..\cblas\sasum.c ..\..\cblas\saxpy.c ..\..\cblas\scasum.c ..\..\cblas\scnrm2.c ..\..\cblas\scopy.c ..\..\cblas\sdot.c ..\..\cblas\sdsdot.c ..\..\cblas\sgbmv.c ..\..\cblas\sgemm.c ..\..\cblas\sgemv.c ..\..\cblas\sger.c ..\..\cblas\snrm2.c ..\..\cblas\srot.c ..\..\cblas\srotg.c ..\..\cblas\srotm.c ..\..\cblas\srotmg.c ..\..\cblas\ssbmv.c ..\..\cblas\sscal.c ..\..\cblas\sspmv.c ..\..\cblas\sspr.c ..\..\cblas\sspr2.c ..\..\cblas\sswap.c ..\..\cblas\ssymm.c ..\..\cblas\ssymv.c ..\..\cblas\ssyr.c ..\..\cblas\ssyr2.c ..\..\cblas\ssyr2k.c ..\..\cblas\ssyrk.c ..\..\cblas\stbmv.c ..\..\cblas\stbsv.c ..\..\cblas\stpmv.c ..\..\cblas\stpsv.c ..\..\cblas\strmm.c ..\..\cblas\strmv.c ..\..\cblas\strsm.c ..\..\cblas\strsv.c ..\..\cblas\xerbla.c ..\..\cblas\zaxpy.c ..\..\cblas\zcopy.c ..\..\cblas\zdotc_sub.c ..\..\cblas\zdotu_sub.c ..\..\cblas\zdscal.c ..\..\cblas\zgbmv.c ..\..\cblas\zgemm.c ..\..\cblas\zgemv.c ..\..\cblas\zgerc.c ..\..\cblas\zgeru.c ..\..\cblas\zhbmv.c ..\..\cblas\zhemm.c ..\..\cblas\zhemv.c ..\..\cblas\zher.c ..\..\cblas\zher2.c ..\..\cblas\zher2k.c ..\..\cblas\zherk.c ..\..\cblas\zhpmv.c ..\..\cblas\zhpr.c ..\..\cblas\zhpr2.c ..\..\cblas\zscal.c ..\..\cblas\zswap.c ..\..\cblas\zsymm.c ..\..\cblas\zsyr2k.c ..\..\cblas\zsyrk.c ..\..\cblas\ztbmv.c ..\..\cblas\ztbsv.c ..\..\cblas\ztpmv.c ..\..\cblas\ztpsv.c ..\..\cblas\ztrmm.c ..\..\cblas\ztrmv.c ..\..\cblas\ztrsm.c ..\..\cblas\ztrsv.c
+         caxpy.c
+         ccopy.c
+         cdotc_sub.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_dot_c.h(31): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_dot_c.h(32): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         cdotu_sub.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_dot_c.h(31): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_dot_c.h(32): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         cgbmv.c
+         cgemm.c
+         cgemv.c
+         cgerc.c
+         cgeru.c
+         chbmv.c
+         chemm.c
+         chemv.c
+         cher.c
+         cher2.c
+         cher2k.c
+         cherk.c
+         chpmv.c
+         chpr.c
+         chpr2.c
+         cscal.c
+         Generating Code...
+         Compiling...
+         csscal.c
+         cswap.c
+         csymm.c
+         csyr2k.c
+         csyrk.c
+         ctbmv.c
+         ctbsv.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbsv_c.h(55): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbsv_c.h(91): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbsv_c.h(128): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbsv_c.h(165): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+         ctpmv.c
+         ctpsv.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(41): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(67): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(90): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(115): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(139): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(164): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(187): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tpsv_c.h(213): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+         ctrmm.c
+         ctrmv.c
+         ctrsm.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(64): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(108): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(152): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(196): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(240): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(283): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(327): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsm_c.h(370): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+         ctrsv.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(42): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(68): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(91): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(116): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(140): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(165): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(188): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_trsv_c.h(214): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+         dasum.c
+         daxpy.c
+         dcopy.c
+         ddot.c
+         dgbmv.c
+         dgemm.c
+         dgemv.c
+         Generating Code...
+         Compiling...
+         dger.c
+         dnrm2.c
+         drot.c
+         drotg.c
+         drotm.c
+         drotmg.c
+         dsbmv.c
+         dscal.c
+         dsdot.c
+         dspmv.c
+         dspr.c
+         dspr2.c
+         dswap.c
+         dsymm.c
+         dsymv.c
+         dsyr.c
+         dsyr2.c
+         dsyr2k.c
+         dsyrk.c
+         dtbmv.c
+         Generating Code...
+         Compiling...
+         dtbsv.c
+         dtpmv.c
+         dtpsv.c
+         dtrmm.c
+         dtrmv.c
+         dtrsm.c
+         dtrsv.c
+         dzasum.c
+         dznrm2.c
+         icamax.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_iamax_c.h(31): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+         idamax.c
+         isamax.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_iamax_r.h(32): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         izamax.c
+         sasum.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_asum_r.h(30): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         saxpy.c
+         scasum.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_asum_c.h(30): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+         scnrm2.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_c.h(35): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_c.h(38): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_c.h(46): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_c.h(49): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_c.h(59): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         scopy.c
+         sdot.c
+         sdsdot.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_dot_r.h(32): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+         Compiling...
+         sgbmv.c
+         sgemm.c
+         sgemv.c
+         sger.c
+         snrm2.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_r.h(29): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_r.h(36): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_r.h(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_nrm2_r.h(49): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+         srot.c
+         srotg.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_rotg.h(22): warning C4244: 'initializing' : conversion from 'double' to 'const float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_rotg.h(28): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_rotg.h(36): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         srotm.c
+         srotmg.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_rotmg.h(46): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_rotmg.h(47): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         ssbmv.c
+         sscal.c
+         sspmv.c
+         sspr.c
+         sspr2.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_spr2.h(39): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_spr2.h(56): warning C4244: '+=' : conversion from 'const double' to 'float', possible loss of data
+         sswap.c
+         ssymm.c
+         ssymv.c
+         ssyr.c
+         ssyr2.c
+         ssyr2k.c
+         Generating Code...
+         Compiling...
+         ssyrk.c
+         stbmv.c
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbmv_r.h(34): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>c:\gsl\src\gsl\1.8\gsl-1.8\cblas\source_tbmv_r.h(52): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         stbsv.c
+         stpmv.c
+         stpsv.c
+         strmm.c
+         strmv.c
+         strsm.c
+         strsv.c
+         xerbla.c
+         zaxpy.c
+         zcopy.c
+         zdotc_sub.c
+         zdotu_sub.c
+         zdscal.c
+         zgbmv.c
+         zgemm.c
+         zgemv.c
+         zgerc.c
+         zgeru.c
+         Generating Code...
+         Compiling...
+         zhbmv.c
+         zhemm.c
+         zhemv.c
+         zher.c
+         zher2.c
+         zher2k.c
+         zherk.c
+         zhpmv.c
+         zhpr.c
+         zhpr2.c
+         zscal.c
+         zswap.c
+         zsymm.c
+         zsyr2k.c
+         zsyrk.c
+         ztbmv.c
+         ztbsv.c
+         ztpmv.c
+         ztpsv.c
+         ztrmm.c
+         Generating Code...
+         Compiling...
+         ztrmv.c
+         ztrsm.c
+         ztrsv.c
+         Generating Code...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1299,5): warning MSB8012: TargetPath(C:\gsl\src\gsl\1.8\gsl-1.8\VC8\x64\Debug-StaticLib\libgslcblas.lib) does not match the Library's OutputFile property value (C:\gsl\src\gsl\1.8\gsl-1.8\VC8\x64\Debug-StaticLib\libgslcblas_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1301,5): warning MSB8012: TargetName(libgslcblas) does not match the Library's OutputFile property value (libgslcblas_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\gsl\src\gsl\1.8\gsl-1.8\VC8\x64\Debug-StaticLib\libgslcblas_d.lib" /NOLOGO /MACHINE:X64 "x64\Debug-StaticLib\caxpy.obj"
+         "x64\Debug-StaticLib\ccopy.obj"
+         "x64\Debug-StaticLib\cdotc_sub.obj"
+         "x64\Debug-StaticLib\cdotu_sub.obj"
+         "x64\Debug-StaticLib\cgbmv.obj"
+         "x64\Debug-StaticLib\cgemm.obj"
+         "x64\Debug-StaticLib\cgemv.obj"
+         "x64\Debug-StaticLib\cgerc.obj"
+         "x64\Debug-StaticLib\cgeru.obj"
+         "x64\Debug-StaticLib\chbmv.obj"
+         "x64\Debug-StaticLib\chemm.obj"
+         "x64\Debug-StaticLib\chemv.obj"
+         "x64\Debug-StaticLib\cher.obj"
+         "x64\Debug-StaticLib\cher2.obj"
+         "x64\Debug-StaticLib\cher2k.obj"
+         "x64\Debug-StaticLib\cherk.obj"
+         "x64\Debug-StaticLib\chpmv.obj"
+         "x64\Debug-StaticLib\chpr.obj"
+         "x64\Debug-StaticLib\chpr2.obj"
+         "x64\Debug-StaticLib\cscal.obj"
+         "x64\Debug-StaticLib\csscal.obj"
+         "x64\Debug-StaticLib\cswap.obj"
+         "x64\Debug-StaticLib\csymm.obj"
+         "x64\Debug-StaticLib\csyr2k.obj"
+         "x64\Debug-StaticLib\csyrk.obj"
+         "x64\Debug-StaticLib\ctbmv.obj"
+         "x64\Debug-StaticLib\ctbsv.obj"
+         "x64\Debug-StaticLib\ctpmv.obj"
+         "x64\Debug-StaticLib\ctpsv.obj"
+         "x64\Debug-StaticLib\ctrmm.obj"
+         "x64\Debug-StaticLib\ctrmv.obj"
+         "x64\Debug-StaticLib\ctrsm.obj"
+         "x64\Debug-StaticLib\ctrsv.obj"
+         "x64\Debug-StaticLib\dasum.obj"
+         "x64\Debug-StaticLib\daxpy.obj"
+         "x64\Debug-StaticLib\dcopy.obj"
+         "x64\Debug-StaticLib\ddot.obj"
+         "x64\Debug-StaticLib\dgbmv.obj"
+         "x64\Debug-StaticLib\dgemm.obj"
+         "x64\Debug-StaticLib\dgemv.obj"
+         "x64\Debug-StaticLib\dger.obj"
+         "x64\Debug-StaticLib\dnrm2.obj"
+         "x64\Debug-StaticLib\drot.obj"
+         "x64\Debug-StaticLib\drotg.obj"
+         "x64\Debug-StaticLib\drotm.obj"
+         "x64\Debug-StaticLib\drotmg.obj"
+         "x64\Debug-StaticLib\dsbmv.obj"
+         "x64\Debug-StaticLib\dscal.obj"
+         "x64\Debug-StaticLib\dsdot.obj"
+         "x64\Debug-StaticLib\dspmv.obj"
+         "x64\Debug-StaticLib\dspr.obj"
+         "x64\Debug-StaticLib\dspr2.obj"
+         "x64\Debug-StaticLib\dswap.obj"
+         "x64\Debug-StaticLib\dsymm.obj"
+         "x64\Debug-StaticLib\dsymv.obj"
+         "x64\Debug-StaticLib\dsyr.obj"
+         "x64\Debug-StaticLib\dsyr2.obj"
+         "x64\Debug-StaticLib\dsyr2k.obj"
+         "x64\Debug-StaticLib\dsyrk.obj"
+         "x64\Debug-StaticLib\dtbmv.obj"
+         "x64\Debug-StaticLib\dtbsv.obj"
+         "x64\Debug-StaticLib\dtpmv.obj"
+         "x64\Debug-StaticLib\dtpsv.obj"
+         "x64\Debug-StaticLib\dtrmm.obj"
+         "x64\Debug-StaticLib\dtrmv.obj"
+         "x64\Debug-StaticLib\dtrsm.obj"
+         "x64\Debug-StaticLib\dtrsv.obj"
+         "x64\Debug-StaticLib\dzasum.obj"
+         "x64\Debug-StaticLib\dznrm2.obj"
+         "x64\Debug-StaticLib\icamax.obj"
+         "x64\Debug-StaticLib\idamax.obj"
+         "x64\Debug-StaticLib\isamax.obj"
+         "x64\Debug-StaticLib\izamax.obj"
+         "x64\Debug-StaticLib\sasum.obj"
+         "x64\Debug-StaticLib\saxpy.obj"
+         "x64\Debug-StaticLib\scasum.obj"
+         "x64\Debug-StaticLib\scnrm2.obj"
+         "x64\Debug-StaticLib\scopy.obj"
+         "x64\Debug-StaticLib\sdot.obj"
+         "x64\Debug-StaticLib\sdsdot.obj"
+         "x64\Debug-StaticLib\sgbmv.obj"
+         "x64\Debug-StaticLib\sgemm.obj"
+         "x64\Debug-StaticLib\sgemv.obj"
+         "x64\Debug-StaticLib\sger.obj"
+         "x64\Debug-StaticLib\snrm2.obj"
+         "x64\Debug-StaticLib\srot.obj"
+         "x64\Debug-StaticLib\srotg.obj"
+         "x64\Debug-StaticLib\srotm.obj"
+         "x64\Debug-StaticLib\srotmg.obj"
+         "x64\Debug-StaticLib\ssbmv.obj"
+         "x64\Debug-StaticLib\sscal.obj"
+         "x64\Debug-StaticLib\sspmv.obj"
+         "x64\Debug-StaticLib\sspr.obj"
+         "x64\Debug-StaticLib\sspr2.obj"
+         "x64\Debug-StaticLib\sswap.obj"
+         "x64\Debug-StaticLib\ssymm.obj"
+         "x64\Debug-StaticLib\ssymv.obj"
+         "x64\Debug-StaticLib\ssyr.obj"
+         "x64\Debug-StaticLib\ssyr2.obj"
+         "x64\Debug-StaticLib\ssyr2k.obj"
+         "x64\Debug-StaticLib\ssyrk.obj"
+         "x64\Debug-StaticLib\stbmv.obj"
+         "x64\Debug-StaticLib\stbsv.obj"
+         "x64\Debug-StaticLib\stpmv.obj"
+         "x64\Debug-StaticLib\stpsv.obj"
+         "x64\Debug-StaticLib\strmm.obj"
+         "x64\Debug-StaticLib\strmv.obj"
+         "x64\Debug-StaticLib\strsm.obj"
+         "x64\Debug-StaticLib\strsv.obj"
+         "x64\Debug-StaticLib\xerbla.obj"
+         "x64\Debug-StaticLib\zaxpy.obj"
+         "x64\Debug-StaticLib\zcopy.obj"
+         "x64\Debug-StaticLib\zdotc_sub.obj"
+         "x64\Debug-StaticLib\zdotu_sub.obj"
+         "x64\Debug-StaticLib\zdscal.obj"
+         "x64\Debug-StaticLib\zgbmv.obj"
+         "x64\Debug-StaticLib\zgemm.obj"
+         "x64\Debug-StaticLib\zgemv.obj"
+         "x64\Debug-StaticLib\zgerc.obj"
+         "x64\Debug-StaticLib\zgeru.obj"
+         "x64\Debug-StaticLib\zhbmv.obj"
+         "x64\Debug-StaticLib\zhemm.obj"
+         "x64\Debug-StaticLib\zhemv.obj"
+         "x64\Debug-StaticLib\zher.obj"
+         "x64\Debug-StaticLib\zher2.obj"
+         "x64\Debug-StaticLib\zher2k.obj"
+         "x64\Debug-StaticLib\zherk.obj"
+         "x64\Debug-StaticLib\zhpmv.obj"
+         "x64\Debug-StaticLib\zhpr.obj"
+         "x64\Debug-StaticLib\zhpr2.obj"
+         "x64\Debug-StaticLib\zscal.obj"
+         "x64\Debug-StaticLib\zswap.obj"
+         "x64\Debug-StaticLib\zsymm.obj"
+         "x64\Debug-StaticLib\zsyr2k.obj"
+         "x64\Debug-StaticLib\zsyrk.obj"
+         "x64\Debug-StaticLib\ztbmv.obj"
+         "x64\Debug-StaticLib\ztbsv.obj"
+         "x64\Debug-StaticLib\ztpmv.obj"
+         "x64\Debug-StaticLib\ztpsv.obj"
+         "x64\Debug-StaticLib\ztrmm.obj"
+         "x64\Debug-StaticLib\ztrmv.obj"
+         "x64\Debug-StaticLib\ztrsm.obj"
+         "x64\Debug-StaticLib\ztrsv.obj"
+         libgslcblas.vcxproj -> C:\gsl\src\gsl\1.8\gsl-1.8\VC8\x64\Debug-StaticLib\libgslcblas.lib
+     1>Done Building Project "C:\gsl\src\gsl\1.8\gsl-1.8\VC8\libgslcblas\libgslcblas.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:09.14
